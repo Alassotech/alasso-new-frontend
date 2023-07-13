@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+footer {
+  min-height: calc(100vh - 68px - 772px);
+}
