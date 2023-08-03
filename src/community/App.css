@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(165, 165, 215);
+}
+
+img{
+  width:100%;
+  height:30%;
+   background-image:url("conference.jpg"); 
+  
+   background-size: cover;
+  background-repeat: no-repeat; 
+  overflow: hidden;
+}
+.mainContent{
+  /* background: yellow; */
+  margin-top: 3%;
+  margin-right:10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  margin:2%;
+  background-color:white;
+  width:40%;
+  height:80%;
+  border-radius: 6px
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  margin:2%;
+  background-color:white;
+  width:100%;
+  height:80%;
+  border-radius: 10px;
+}
+
+.title{
+  padding: 0px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.leftContainer{
+  padding:30px;
+}
+
+.image{
+  padding: 10px;
+}
+
+.about{
+
+  padding: 20px;
+}
+
+.rightContainer{
+  border:1px solid grey;
+  margin: 20px;
+  padding:30px;
+}
+
+.lower{
+  display: flex;
+  flex-direction: row;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.picture{
+
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.pictureAbout{
+  width: 50%;
+  padding:30px;
+}
+
+.image2{
+  width:300px;
+  height:300px;
+  margin-bottom: 30px;
+}
+
+.button{
+  background-color: dodgerblue;
+  color: white;
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid dodgerblue;
+  border-radius: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+  width:300px;
+}
+
+.banner div{
+  width:100%;
+  height:200px;
+  background-size: cover;
+  overflow:hidden;
+  background-image:url("conference.jpg");
+  background-position: center;
+  
+}
+@media  screen and (max-width: 576px)
+{
+  .title{
+      font-size: 10px;
+  }
+ 
+  .image2{
+      width:120px;
+      height:120px;
+  }
+
+  .picture{
+      align-items: center;
+      justify-content: center;
+  }
+
+  .button{
+      width:120px;
+      font-size: 7px;
+      padding: 2px;
+      margin:3px;
+  }
+  .pictureAbout{
+      padding: 0;
+      font-size: 7px;
+      padding-top: 10px;
+  }
+
+  .lower{
+      padding-top: 10px;
+      
+  }
+
+  .image2{
+      margin-bottom: 10px;
+  }
+
+  .about{
+      font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.left {
+flex-basis: 100%; /* Each column will take 100% width, stacking them vertically */
+}
+
+.mainContent{
+flex-wrap: wrap;
+
+}
+
+.lower{
+flex-wrap: wrap;
+
+align-items: center;
+justify-content: center;
+}
+
+.pictureAbout{
+width:100%;
+}
+.right {
+flex-basis: 100%; /* Each column will take 100% width, stacking them vertically */
+}
+}
