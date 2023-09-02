@@ -24,11 +24,14 @@ import NptelNotes from './Components/NptelNotes'
 import CreditInside from './Components/CreditInside'
 import DevbyLokie from './Promotions/DevbyLokie'
 import Download from './Popups/Download'
+import CGPAcalc from './Components/CGPAcalc'
+import Services from './Components/Services'
+
 function App () {
   const user = localStorage.getItem('jwttoken')
   return (
     <>
-      
+      {/* <CGPAcalc/> */}
       <Toaster
         position='top-center'
         toastOptions={{
@@ -68,6 +71,8 @@ function App () {
             <Route path='devbylokie' element={<DevbyLokie />} />
 
             <Route path='' element={<NptelCourse />} />
+
+            <Route path='services' element={<Services />} />
             <Route
               path=':selectcourse/semester/:selectsem'
               element={<Semester_Nav />}
@@ -84,6 +89,7 @@ function App () {
             <Route path='portal/for-use/admin' element={<AdminPortal />} />
           </Routes>
         </main>
+        
         <Footer />
       </Router>
     </>

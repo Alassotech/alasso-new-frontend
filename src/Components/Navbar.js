@@ -184,61 +184,66 @@ const Navbar = () => {
                   Roadmaps
                 </Link>
               </li>
+              <li className='nav-item mx-3'>
+                <Link className='nav-link' to='/services'>
+                  Services
+                </Link>
+              </li>
               <hr />
-             
+
             </ul>
             <li className='nav-item mx-3'>
-                {user ? (
-                  <button
-                    onClick={handleLogout}
-                    className='nav-btn'
-                  >
-                    Logout
-                  </button>
-                ) : (
-                  <Link
-                    className='btn btn-outline-success bg-dark text-light'
-                    to='/signup'
-                  >
-                    Sign Up
-                  </Link>
-                )}
-              </li>
-              <li className=' plus-icon-sub-menu-hover nav-item mx-3'>
-                <Link className='btn rounded-circle bg-primary text-light'>
-                  <i class='fa fa-plus' aria-hidden='true'></i>
+              {user ? (
+                <button
+                  onClick={handleLogout}
+                  className='nav-btn'
+                >
+                  Logout
+                </button>
+              ) : (
+                <Link
+                  className='btn btn-outline-success bg-dark text-light'
+                  to='/signup'
+                >
+                  Sign Up
                 </Link>
-                <div className='sub-menu plus-dropdown'>
-                  <ul>
-                    <Link className='nav-link-tip' to={'/help'}>
-                      <i className='fa fa-2x fa-map-signs' aria-hidden='true'>
-                        <span className='tool-tip'>Help</span>
-                      </i>
-                    </Link>
-                    <Link className='nav-link-tip' to={'/developers'}>
-                      <i className='  fa fa-2x fa-code ' aria-hidden='true'>
-                        <span className='tool-tip'>Developers</span>
-                      </i>
-                    </Link>
+              )}
+            </li>
+            <li className=' plus-icon-sub-menu-hover nav-item mx-3'>
+              <Link className='btn rounded-circle bg-primary text-light'>
+                <i class='fa fa-plus' aria-hidden='true'></i>
+              </Link>
+              <div className='sub-menu plus-dropdown'>
+                <ul>
+                  <Link className='nav-link-tip' to={'/help'}>
+                    <i className='fa fa-2x fa-map-signs' aria-hidden='true'>
+                      <span className='tool-tip'>Help</span>
+                    </i>
+                  </Link>
+                  <Link className='nav-link-tip' to={'/developers'}>
+                    <i className='  fa fa-2x fa-code ' aria-hidden='true'>
+                      <span className='tool-tip'>Developers</span>
+                    </i>
+                  </Link>
 
-                    {adminOnly ? (
-                      <>
-                        <Link to={'/portal/for-use/admin'}>
-                          <i
-                            className=' admin-circle fa fa-2x fa-circle'
-                            aria-hidden='true'
-                          ></i>
-                        </Link>{' '}
-                      </>
-                    ) : (
-                      <div></div>
-                    )}
-                  </ul>
-                </div>
-              </li>
+                  {adminOnly ? (
+                    <>
+                      <Link to={'/portal/for-use/admin'}>
+                        <i
+                          className=' admin-circle fa fa-2x fa-circle'
+                          aria-hidden='true'
+                        ></i>
+                      </Link>{' '}
+                    </>
+                  ) : (
+                    <div></div>
+                  )}
+                </ul>
+              </div>
+            </li>
           </div>
         </div>
-        
+
       </nav>
     </div>
   )

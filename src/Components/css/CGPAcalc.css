@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type='number'],
+  select {
+    width: 100px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tfoot {
+    font-weight: bold;
+  }
+  
+  tfoot td {
+    padding: 5px;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Added style for the table header */
+  table th {
+    color: #000; /* Set the text color to black */
+    background-color: #f2f2f2; /* Set the background color to a light gray */
+  }
+  /* ... other styles ... */
+
+/* Updated style for the table header */
+table th {
+    color: #000; /* Set the text color to black */
+    background-color: #f2f2f2; /* Set the background color to a light gray */
+  }
+  
+  /* Style for the "Course" column in the table body */
+  tbody td:first-child {
+    color: #000; /* Set the text color to black */
+  }
+  
+  /* ... other styles ... */
+  
